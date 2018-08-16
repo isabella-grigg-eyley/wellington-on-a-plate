@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "run debug": "nodemon index.js",
-    "start": "yarn start index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.16.3",
