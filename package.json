@@ -1,0 +1,18 @@
+{
+  "name": "wellington-on-a-plate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kakapo-2018/wellington-on-a-plate.git",
+  "license": "MIT",
+  "scripts": {
+    "run debug": "nodemon index.js",
+    "start": "yarn start index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
