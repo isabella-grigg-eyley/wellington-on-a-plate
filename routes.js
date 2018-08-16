@@ -5,7 +5,7 @@ const fs = require('fs');
 let data = require('./data.json');
 
 router.get('/', (req, res) => {
-    res.send("mmm burgers");
+    res.send('burgers mmmm');
 })
 
 module.exports = router;
