@@ -11,7 +11,6 @@ server.engine('hbs', hbs({
 server.set('view engine', 'hbs')
 server.use(express.static('public'))
 server.use(express.urlencoded({extended: false}))
-
-server.use('./', routes)
+server.use('/', routes)
 
 module.exports = server;
