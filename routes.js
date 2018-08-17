@@ -6,25 +6,28 @@ let data = require('./data.json');
 let burgerList = data["burgers"]
 
 router.get('/', (req, res) => {
-    //render home page with sidebar invisible by default
-    //res.send('burgers mmmm');
-    //res.send(burgerList[0]["name"])
-    res.render('./home')
+    let emptyBurger = {
+        "id": 0,
+        "restaurant": "none",
+        "name": "none",
+        "image": "",
+        "description": "none",
+        "price": "2000000",
+        "rating" : "" 
+      }
+    res.render('./home', emptyBurger)
 })
 
 router.post('/', (req, res) => {
-    console.log("post req received")
-    res.send(req.body);
-    //let burgerID = [req.body["id"]]
-    //burgerID = "1"
+    let burgerID = Number(req.body["ID"]);
 
-    //req.body === {"id": "1"}
-    //get ID of burger clicked,
-    //find burger info in data file
-    //render page with burger info sent to it
-    //let burger =  data["burgers"].find((element) => {
-        //return burgerID == element.id
-    
+    console.log("post req received")
+
+    let burger = burgerList.find((element) => {
+        return (burgerID === element["id"])
+    })
+    console.log(burger)
+    res.render('./home', burger);
 })
 
 module.exports = router;
