@@ -1,24 +1,29 @@
 <div class="container">
-    <div class="map">
-        <a href="/{{id}}"><img class="img" src="../public/images/map.jpg" alt="Map"> </a>
-
+    <div>
+        <form action="/" method="POST">
+            <input id="b1" class="burgerbutton" type="submit" name="ID" value="1"></input>
+            <input id="b2"class="burgerbutton" type="submit" name="ID" value="2"></input>
+            <input id="b3"class="burgerbutton" type="submit" name="ID" value="3"></input>
+            <input id="b4"class="burgerbutton" type="submit" name="ID" value="4"></input>
+            <input id="b5"class="burgerbutton" type="submit" name="ID" value="5"></input>
+            <input id="b6"class="burgerbutton" type="submit" name="ID" value="6"></input>
+            <input id="b7"class="burgerbutton" type="submit" name="ID" value="7"></input>
+            <input id="b8"class="burgerbutton" type="submit" name="ID" value="8"></input>
+            <input id="b9"class="burgerbutton" type="submit" name="ID" value="9"></input>
+            <input id="b10"class="burgerbutton" type="submit" name="ID" value="10"></input>
+            <input id="b11"class="burgerbutton" type="submit" name="ID" value="11"></input>
+            <input id="b12"class="burgerbutton" type="submit" name="ID" value="12"></input>
+        </form>
+        <img class="img" src="./images/map.jpg" alt="Map">
     </div>
 </div>
 
 <div class="sidenav">
-    <h2>{{restaurant}}</h2>
-    <h3>{{name}}</h3>
-    <p>{{description}}</p>
-    <p>{{price}}</p>
-    <p>{{rating}}</p>
-</div>
-
-{{!--<div class="burgers">
-    <img class="img" src="{{image}}" alt= "{{name}}">
-    <h2>{{restaurant}}</h2>
-    <h3>{{name}}</h3>
-    <p>{{description}}</p>
-    <p>{{price}}</p>
-    <p>{{rating}}</p> --}}
-
+    <div class="sidebar-text">
+        <h2>{{restaurant}}</h2>
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <p>${{price}}</p>
+        <p>{{rating}}</p>
+    </div>
 </div>
